@@ -1,0 +1,19 @@
+.container{
+    border: 1px solid rgb(52, 40, 216);
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: black;
+}
+body.dark{
+    background-color: rgba(0, 0, 0, 0.932);
+    color: rgba(255, 255, 255, 0.938);
+}
+.container.dark{
+    background-color: rgba(0, 0, 0, 0.932);
+    color: rgba(255, 255, 255, 0.938);
+}
+body.dark .container.dark{
+    background-color: inherit;
+    color: inherit;
+}

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #F6F0EB;
+    font-family: sans-serif;
+   
+}
+.main-content{
+    overflow-x: hidden;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration-line: none;
+}
+header{
+    background-color: white;
+    padding: 24px 38px;
+    position: sticky;
+    top: 0;
+}
+.menu{
+    display: none;
+}
+.close-icon{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 1270px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    /* gap: 50px;   not supported by all browser */
+}
+nav a + a{
+    margin-left: 50px;   /*first wale ko chhod ke */
+}
+nav a{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.logo{
+    width: 40px;
+}
+.logo img{
+    width: 100%;
+}
+
+main{
+    padding: 0px 22px;
+}
+
+.img-container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img-container img{
+    width: 100%;
+}
+.container img{
+    width: 100%;
+}
+section{
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+}
+section p{
+    color: rgb(73,33,24);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
+}
+.hero-section{
+    margin-top:70px ;
+}
+.hero-section p{
+    color: rgb(73,33,24);
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+.go-to-top{
+    text-align: right;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+.go-to-top a{
+    text-decoration: underline;
+}
+footer p{
+    text-align: center;
+    font-size: 24px;
+    color: #858585;
+    margin: 64px;
+}
+
+@media( max-width: 1000px){
+    nav a{
+        color: black;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .hero-section{
+        margin-top: 32px;
+    }
+    section{
+        margin-bottom: 40px;
+    }
+    nav a + a{
+        margin-left: 25px;   /*first wale ko chhod ke */
+    }
+}
+@media( max-width: 770px){
+    nav a{
+        color: black;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    nav a + a{
+        margin-left: 20px;   /*first wale ko chhod ke */
+    }
+}
+@media( max-width: 640px){
+    header{
+        background-color:  #f6f0eb9c;
+        backdrop-filter: blur(8px);
+        padding: 10px 16px;
+    }
+    nav{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.951);
+        flex-direction: column;
+        right: -200px;
+        top: 16px;
+        padding: 24px;
+        transition: right 0.25s ease-in-out;
+        /* display: none; */
+        /* backdrop-filter: blur(8px); */
+    }
+   
+    nav a + a{
+        margin: 0;
+       margin-top: 16px
+    }
+    section p{
+        font-size: 20px;
+    }
+    .hero-section p{
+        font-size: 14px;
+    }
+    h3 a, footer p{
+        font-size: 16px;
+    }
+    .menu{
+        display: block;
+        background-color: white;
+        padding: 14px;
+        padding-right: 10px;
+        padding-top: 8px;
+        border-radius: 0px 0px 0px 50px;
+        cursor: pointer;
+    }
+    .close-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 14px;
+        cursor: pointer;
+    }
+    .menu-open nav{
+        right: 24px;
+    }
+    .menu-open .menu{
+        display: none;
+    }
+}
